@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+.produto {
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    margin: 1em;
+}
+.produto img {
+    width: 20vw;
+    height: 20hw;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.full-screen-video {
+    width: 50vw;
+    height: 75vh;
+}
+
