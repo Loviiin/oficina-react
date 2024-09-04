@@ -8,7 +8,16 @@ header {
     background-color: #333;
     color: white;
     padding: 1em 0;
+    position: relative;
 }
+#menu-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
 
 nav ul {
     list-style: none;
@@ -39,13 +48,33 @@ section {
 }
 
 .produto {
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 0 0 30%;
     box-sizing: border-box;
     margin: 1em;
+    padding: 1em;
+    border-radius: 5%;
+    border-color: blue;
+    border-style: solid;
+    text-align: center;
 }
+
 .produto img {
     width: 20vw;
-    height: 20hw;
+    height: 20vh;
+    margin-bottom: 1em;
+}
+
+.produto h3 {
+    margin: 0.5em 0;
+    background-color: rgb(238, 10, 10);
+}
+
+.produto p {
+    margin: 0.5em 0;
 }
 
 footer {
@@ -60,5 +89,21 @@ footer {
 .full-screen-video {
     width: 50vw;
     height: 75vh;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Altere para a cor desejada */
+    text-decoration: underline; /* Adicione um sublinhado ou outro estilo desejado */
+}
+
+@media (max-width: 500px) {
+    .produto {
+        flex: 0 0 100%;
+    }
+
+    .produto img {
+        width: 80vw;
+        height: auto;   
+    }
 }
 
